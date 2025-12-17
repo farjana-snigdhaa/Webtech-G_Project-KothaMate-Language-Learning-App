@@ -1,0 +1,123 @@
+:root {
+    --font-size-base: 16px;
+    --font-size-small: 0.85em;
+    --font-size-medium: 1em;
+    --font-size-large: 1.2em;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+body.light-theme {
+    --bg-color: #f4f4f9;
+    --text-color: #333333;
+    --header-bg: #ffffff;
+    --footer-bg: #dddddd;
+    --border-color: #cccccc;
+    --card-bg: #ffffff;
+}
+
+body.dark-theme {
+    --bg-color: #1a1a2e;
+    --text-color: #e9e9f2;
+    --header-bg: #0f0f1a;
+    --footer-bg: #0f0f1a;
+    --border-color: #3f3f5a;
+    --card-bg: #2c2c44;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#main-header, #main-footer {
+    padding: 20px;
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+#main-footer {
+    border-bottom: none;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--footer-bg);
+    margin-top: 40px;
+}
+
+#main-content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+body.small-font {
+    font-size: var(--font-size-small);
+}
+body.small-font #font-small {
+    font-weight: bold;
+    border-color: var(--text-color); 
+}
+
+body.medium-font {
+    font-size: var(--font-size-medium);
+}
+body.medium-font #font-medium {
+    font-weight: bold;
+    border-color: var(--text-color); 
+}
+
+body.large-font {
+    font-size: var(--font-size-large);
+}
+body.large-font #font-large {
+    font-weight: bold;
+    border-color: var(--text-color); 
+}
+
+#font-size-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.font-selector {
+    padding: 5px 10px;
+    font-size: 1em; 
+}

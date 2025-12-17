@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Desktop</title>
+    <link rel="stylesheet" href="SignUpPage.css">
+    <script src="SignUpPage.html"></script>
+
+   
+</head>
+
+<body>
+
+    <div class="desktop-wrapper">
+        <div class="desktop-container">
+
+            <!-- Header -->
+            <header class="desktop-header">
+                <a href="#" class="back-link">&#8592; Back</a>
+            </header>
+
+            <!-- Main Section -->
+            <main class="signup-card">
+
+                <div class="card-header-visual"></div>
+
+                <div class="card-content">
+                    <h1 class="title">Sign Up</h1>
+                    <p class="subtitle">Let's get you in</p>
+
+                    <!-- Sign Up Form -->
+                    <form class="signup-form" action="#" method="POST">
+
+                        <!-- First & Last Name -->
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="firstName" placeholder="First Name" required>
+                            </div>
+
+                            <div class="form-group half-width">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+
+                        <!-- Username -->
+                        <div class="form-group">
+                            <label for="user-name">User Name</label>
+                            <input type="text" id="user-name" name="userName" placeholder="Enter Username" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+
+                        <!-- Contact + Gender -->
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="contact-number">Contact Number</label>
+                                <input type="tel" id="contact-number" name="contactNumber" placeholder="Phone Number" required>
+                            </div>
+
+                            <div class="form-group half-width">
+                                <label>Gender</label>
+                                <div class="gender-options">
+
+                                    <input type="radio" id="gender-male" name="gender" value="male" hidden checked>
+                                    <label for="gender-male" class="gender-button male-button">Male</label>
+
+                                    <input type="radio" id="gender-female" name="gender" value="female" hidden>
+                                    <label for="gender-female" class="gender-button female-button">Female</label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="age-range-wrapper">
+                        <label class="age-title">Age</label>
+
+                                <div class="age-range">
+                                <div class="age-step" data-range="10-30">
+                                <div class="circle"></div>
+                                    <span>10-30</span>
+                                </div>
+
+                            <div class="line"></div>
+
+                           <div class="age-step" data-range="30-60">
+                        <div class="circle"></div>
+                        <span>30-60</span>
+                     </div>
+
+        <div class="line"></div>
+
+        <div class="age-step" data-range="60+">
+            <div class="circle"></div>
+            <span>60+</span>
+            <input type="hidden" id="age" name="age" value="10">
+        </div>
+    </div>
+
+    <input type="hidden" id="selectedAgeRange" name="ageRange" value="">
+</div>
+
+
+                        <!-- Password + Confirm Password -->
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                            </div>
+
+                            <div class="form-group half-width">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm Password" required>
+                            </div>
+                        </div>
+
+                        <!-- Terms & Conditions -->
+                        <div class="form-group terms-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the terms and conditions</label>
+                            <a href="#" class="terms-link">Terms</a>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-actions">
+                            <button type="submit" class="sign-up-button">
+                                <span>&#10003;</span> Sign Up
+                            </button>
+
+                            <a href="#" class="login-link">
+                                Already have an account? Login
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>

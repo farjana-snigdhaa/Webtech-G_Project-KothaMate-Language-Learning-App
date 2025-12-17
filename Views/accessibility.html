@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Theme Toggle</title>
+    <link rel="stylesheet" href="accessibility.css">
+    <script src="accessibility.js"></script>
+
+</head>
+<body class="light-theme small-font">
+
+    <header id="main-header">
+        <h1>My Awesome Portfolio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+        <div id="controls">
+            <button id="theme-toggle">Switch to Dark Mode</button>
+            
+            <div id="font-size-control">
+                <span>Font Size:</span>
+                <button id="font-small" class="font-selector">Small</button>
+                <button id="font-medium" class="font-selector">Middle</button>
+                <button id="font-large" class="font-selector"><strong>Big</strong></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h2>Welcome</h2>
+            <p>This is the main content area. Observe how the text and background colors change when you switch modes, and how the font size adjusts.</p>
+            <p>Accessibility is a crucial part of modern web design, and these features help ensure a comfortable experience for all users.</p>
+        </section>
+        <section class="card">
+            <h3>A Content Card</h3>
+            <p>This element has a distinct border and background that also respects the current theme.</p>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* ---------- CARD / CONTAINER ---------- */
+.desktop-container {
+    width: 100%;
+    max-width: 760px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+}
+
+/* ---------- HEADER ---------- */
+.desktop-header {
+    background-color: #ff0000;
+    padding: 15px 30px;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ---------- RED TOP BANNER ---------- */
+.card-header-visual {
+    height: 75px;
+    background-color: #ff0000;
+}
+
+/* ---------- CONTENT ---------- */
+.card-content {
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* ---------- FORM LAYOUT ---------- */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+/* ---------- LABELS ---------- */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* ---------- INPUTS ---------- */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    background-color: #fafafa;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Highlight on focus */
+.signup-form input:focus {
+    background-color: white;
+    border-color: #ff0000;
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.2);
+    outline: none;
+}
+
+/* ---------- ERROR + VALIDATION STYLING ---------- */
+
+/* red border when JS adds class="error" */
+input.error {
+    border-color: red !important;
+    background-color: #ffecec !important;
+}
+
+/* green border when JS adds class="valid" */
+input.valid {
+    border-color: green !important;
+    background-color: #eefce8 !important;
+}
+
+/* error message under inputs */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    text-align: left;
+}
+
+/* ---------- GENDER BUTTONS ---------- */
+.gender-options {
+    display: flex;
+    gap: 12px;
+}
+
+.gender-button {
+    flex: 1;
+    text-align: center;
+    padding: 13px 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #f9dede;
+    color: #b30000;
+    cursor: pointer;
+    border: 1px solid #ffcccc;
+    transition: 0.25s;
+}
+
+input[type="radio"]:checked + .gender-button {
+    background-color: #ff0000;
+    color: #fff;
+    border-color: #ff0000;
+}
+
+/* ---------- AGE RANGE STEPS (your image-like style) ---------- */
+.age-range-wrapper {
+    margin-top: 25px;
+}
+
+.age-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.age-range {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* each step (30-45, 40-50, 50+) */
+.age-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.age-step .circle {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #ff0000;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.age-step.selected .circle {
+    background: #ff0000;
+    transform: scale(1.25);
+}
+
+.age-step span {
+    margin-top: 8px;
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* connecting lines */
+.line {
+    height: 4px;
+    width: 80px;
+    background: #ddd;
+    border-radius: 2px;
+}
+
+/* ---------- TERMS ---------- */
+.terms-group {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.terms-group input {
+    width: 18px;
+    height: 18px;
+    accent-color: #ff0000;
+}
+
+.terms-group label {
+    margin-left: 8px;
+}
+
+.terms-link {
+    margin-left: auto;
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ---------- BUTTON ---------- */
+.sign-up-button {
+    width: 200px;
+    padding: 14px 0;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.35);
+    transition: 0.25s;
+}
+
+.sign-up-button:hover {
+    background-color: #d10000;
+}
+
+.login-link {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
